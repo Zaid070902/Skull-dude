@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+
+.skull{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    height: 170px;
+    width: 180px;
+    background-color: #999;
+    border-radius: 30% 30% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eyes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    position: relative;
+}
+
+.eye1{
+    background-color: #111;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px black;
+
+}
+
+.eye2{
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px black;
+    animation: tilt 5s infinite 3s;
+}
+
+@keyframes tilt{
+    0%{
+
+    }
+
+    6%{
+        transform: rotateX(90deg);
+    }
+
+    12%{
+        transform: rotateX(0deg);
+    }
+}
+
+.iris{
+    height: 30px;
+    width: 30px;
+    border: black solid 1px;
+    box-shadow: inset 0 0 15px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    animation: change 20s infinite;
+
+}
+
+@keyframes change {
+    0%{ background-color: #663399;
+
+    }
+
+    33%{
+        background-color: #0082E2;
+    }
+
+    66%{
+        background-color: #300065;
+    }
+
+    100%{
+        background-color: #663399;
+    }
+
+    
+}
+
+.pupil{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.nose{
+    z-index: 5;
+    position: relative;
+    top: 30px;
+    display: flex;
+}
+
+.nos1{
+    height: 35px;
+    width: 20px;
+    background-color: #111;
+    z-index: 5px;
+    border-radius: 50%;
+    transform: rotate(25deg);
+    position: relative;
+    left: 6px;
+}
+
+.nos2{
+    height: 35px;
+    width: 20px;
+    background-color: #111;
+    z-index: 5px;
+    border-radius: 50%;
+    transform: rotate(-25deg);
+    position: relative;
+    right: 6px;
+}
+
+
+.shine{
+    height: 7px;
+    width: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.teeth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.tooth1{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    border-radius: 20%;
+    margin: 5px;
+}
+
+.tooth2{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    border-radius: 20%;
+    margin: 5px;
+
+}
+.tooth3{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    border-radius: 20%;
+    margin: 5px;
+
+}
+
+.mouth{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jaw{
+    width: 120px;
+    height: 30px;
+    background-color: #999;
+    margin-top: 40px;
+    border-radius: 30% 30% 20% 20%;
+}
+
+.teeth2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.tooth1a{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    border-radius: 20%;
+    margin: 5px;
+}
+
+.tooth2a{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    border-radius: 20%;
+    margin: 5px;
+
+}
+.tooth3a{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    border-radius: 20%;
+    margin: 5px;
+
+}
